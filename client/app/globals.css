@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+  }
+  /* Define the animation */
+  @keyframes growShrink {
+    0% {
+      transform: scale(1);
+    } /* Initial size */
+    50% {
+      transform: scale(1.2);
+    } /* Scaled up */
+    100% {
+      transform: scale(1);
+    } /* Back to initial size */
+  }
+  /* Define the animation */
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    75% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes moveDown {
+    0% {
+      top: 0;
+    }
+    100% {
+      top: 50px;
+    }
+  }
+
+  @keyframes shake-crazy {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(0, -5px);
+    } /* Move up in Y-axis */
+    50% {
+      transform: translate(-5px, 0);
+    } /* Move left in X-axis */
+    75% {
+      transform: translate(0, 5px);
+    } /* Move down in Y-axis */
+  }
+
+  /* Apply the animation to the element */
+  .shakeCrazy {
+    animation: shake 0.5s ease-in-out;
+  }
+  /* Apply the animation to the element */
+  .shake {
+    animation: shake 0.5s ease-in-out infinite;
+  }
+  /* Apply the animation to the image */
+  .dance {
+    animation: growShrink 2s infinite; /* 2s duration, infinite loop */
+  }
+  .moveDown {
+    animation: moveDown 0.5s ease forwards;
+  }
+}
