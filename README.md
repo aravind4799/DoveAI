@@ -1,5 +1,5 @@
 # DoveAI
-
+https://github.com/aravind4799/DoveAI/assets/58908871/a7070c1c-1930-4796-b167-6ec9f4dc77c0
 ## Description
 DoveAI is a full-stack application utilizing Next.js, Flask, and MongoDB Atlas. It features a ChatGPT clone using the OpenAI API, allowing users to interact with an AI. User chats are persisted in a MongoDB Atlas database. The application also enables users to access previous chats with one click and continue the conversation seamlessly.
 
